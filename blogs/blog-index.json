@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "2024-02-07-panos-commit-validation-error-http-filter",
+    "title": "Fixing Commit Validation Error After PAN-OS Upgrade: Application-Filter 'http' Already in Use",
+    "date": "2024-02-07",
+    "description": "A practical troubleshooting guide to resolving the PAN-OS commit validation error caused by application-filter names conflicting with internal protocol names after upgrade."
+  },
+  {
+    "slug": "2024-07-17-vm-series-custom-image-gcp",
+    "title": "Creating a Custom VM-Series Firewall Image on Google Cloud Platform",
+    "date": "2024-07-17",
+    "description": "A practical field guide to creating a custom Palo Alto Networks VM-Series firewall image on Google Cloud Platform when the required PAN-OS version is not available in the Marketplace."
+  },
+  {
+    "slug": "2023-08-31-globalprotect-windows-install",
+    "title": "Installing GlobalProtect on Windows: A Practical Guide from the Field",
+    "date": "2023-08-31",
+    "description": "A practical field guide to installing and configuring Palo Alto Networks GlobalProtect VPN client on Windows, with insights into portal architecture and troubleshooting."
+  }
+]

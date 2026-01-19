@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Sakshi Sharma - Cybersecurity Consultant">
+    <title>About | Sakshi Sharma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">Sakshi Sharma</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="blogs.html">Blogs</a>
+        </div>
+    </nav>
+
+    <main class="content-wrapper">
+        <section class="about-intro">
+            <h1>About Me</h1>
+            <div class="intro-text">
+                <p>Hi, I'm Sakshi Sharma, a Cloud Network Engineer and Cybersecurity Consultant with 4+ years of hands-on experience in enterprise and hybrid cloud environments. I specialize in designing, securing, and troubleshooting on-prem and cloud networks with a strong foundation in IP networking, routing, firewalls, and automation.</p>
+
+                <p>Currently working as a Senior Associate – Cybersecurity Consultant at Infosys Limited for Mercedes-Benz (Daimler AG), I deliver end-to-end security solutions including firewall architecture design, deployment, and L2/L3 support for multi-vendor firewalls. My expertise spans Palo Alto NGFW, FortiGate, Check Point, Cisco Firepower, and cloud platforms including Microsoft Azure and AWS.</p>
+
+                <p>I'm passionate about taking ownership of complex security challenges end-to-end, collaborating with cross-functional teams, and supporting large-scale, SLA-driven production infrastructures. My approach combines deep technical knowledge with practical problem-solving to build secure, resilient systems that enable business growth.</p>
+
+                <p>As a Palo Alto Networks Certified Network Security Engineer (PCNSE) and recipient of multiple excellence awards, I'm committed to staying at the forefront of network security and cloud technologies while mentoring junior engineers and contributing to the security community.</p>
+            </div>
+        </section>
+
+        <section class="resume-section">
+            <div class="resume-header">
+                <h2>Resume</h2>
+                <a href="public/resume.pdf" download class="btn btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    Download Resume
+                </a>
+            </div>
+
+            <div id="resume-content">
+                <div class="loading">Loading resume...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sakshi Sharma. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Load and display resume data
+        fetch('data/resume.json')
+            .then(response => response.json())
+            .then(data => {
+                const resumeContent = document.getElementById('resume-content');
+
+                let html = '';
+
+                // Summary
+                if (data.summary) {
+                    html += `
+                        <div class="resume-block">
+                            <h3>Summary</h3>
+                            <p>${data.summary}</p>
+                        </div>
+                    `;
+                }
+
+                // Skills
+                if (data.skills && data.skills.length > 0) {
+                    html += `
+                        <div class="resume-block">
+                            <h3>Skills</h3>
+                            <div class="skills-grid">
+                                ${data.skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // Experience
+                if (data.experience && data.experience.length > 0) {
+                    html += `
+                        <div class="resume-block">
+                            <h3>Experience</h3>
+                            ${data.experience.map(exp => `
+                                <div class="experience-item">
+                                    <div class="exp-header">
+                                        <h4>${exp.title}</h4>
+                                        <span class="exp-date">${exp.period}</span>
+                                    </div>
+                                    <p class="exp-company">${exp.company}</p>
+                                    <ul class="exp-details">
+                                        ${exp.highlights.map(highlight => `<li>${highlight}</li>`).join('')}
+                                    </ul>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                }
+
+                // Certifications
+                if (data.certifications && data.certifications.length > 0) {
+                    html += `
+                        <div class="resume-block">
+                            <h3>Certifications</h3>
+                            <ul class="cert-list">
+                                ${data.certifications.map(cert => `<li>${cert}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `;
+                }
+
+                // Education
+                if (data.education && data.education.length > 0) {
+                    html += `
+                        <div class="resume-block">
+                            <h3>Education</h3>
+                            ${data.education.map(edu => `
+                                <div class="education-item">
+                                    <h4>${edu.degree}</h4>
+                                    <p>${edu.institution} | ${edu.year}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                }
+
+                resumeContent.innerHTML = html;
+            })
+            .catch(error => {
+                document.getElementById('resume-content').innerHTML =
+                    '<p class="error">Failed to load resume data.</p>';
+                console.error('Error loading resume:', error);
+            });
+    </script>
+</body>
+</html>

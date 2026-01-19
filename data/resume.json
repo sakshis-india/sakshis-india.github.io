@@ -1,0 +1,75 @@
+{
+  "summary": "Network and Security Engineer with 4+ years of hands-on experience in enterprise and hybrid cloud environments, specializing in designing, securing, and troubleshooting on-prem and cloud networks with a strong foundation in IP networking, routing, firewalls, and automation. Proven ability to take ownership of complex security issues end-to-end, collaborate with cross-functional teams, and support large-scale, SLA-driven production infrastructures aligned with Microsoft cloud and enterprise security standards.",
+  "skills": [
+    "Palo Alto NGFW",
+    "Panorama",
+    "Cisco Firepower",
+    "FortiGate",
+    "Check Point",
+    "Prisma SD-WAN",
+    "Microsoft Azure",
+    "AWS",
+    "VMware ESXi",
+    "Hybrid Cloud Network Design",
+    "GlobalProtect VPN",
+    "IPsec VPN",
+    "SSL VPN",
+    "BGP",
+    "OSPF",
+    "EIGRP",
+    "MPLS",
+    "Ansible (YAML)",
+    "PowerShell",
+    "High Availability Architecture",
+    "Load Balancing (LTM/HLB)",
+    "Wireshark",
+    "Vulnerability Assessment",
+    "Security Policy Management",
+    "NAT Configuration",
+    "SSL Decryption",
+    "MACSec",
+    "Packet Analysis",
+    "Incident Response",
+    "Root Cause Analysis",
+    "ServiceNow",
+    "JIRA",
+    "ITIL"
+  ],
+  "experience": [
+    {
+      "title": "Senior Associate – Cybersecurity Consultant",
+      "company": "Infosys Limited (Client: Mercedes-Benz)",
+      "period": "Jun 2025 - Present",
+      "highlights": [
+        "Delivered end-to-end cybersecurity consulting including problem analysis, effort estimation, firewall architecture design, and deployment across enterprise environments",
+        "Provided L2/L3 support for multi-vendor firewalls (Palo Alto, FortiGate, Check Point, Cisco Firepower), managing security policies, NAT, VPNs, upgrades, and high-availability configurations",
+        "Led POCs for firewall and cloud security solutions, conducted vulnerability assessments, and implemented security hardening for 24x7 SLA-driven production systems"
+      ]
+    },
+    {
+      "title": "Network Security Engineer – Escalation Engineer",
+      "company": "iOPEX Technologies Pvt. Ltd.",
+      "period": "Jan 2022 - Jun 2025",
+      "highlights": [
+        "Served as L3 escalation engineer for enterprise-scale Palo Alto NGFW deployments, resolving high-severity network and security incidents within strict SLA targets",
+        "Designed, deployed, and supported secure hybrid cloud architectures across Azure, AWS, and VMware ESXi, including advanced troubleshooting of GlobalProtect, IPsec/SSL VPNs, GRE, MACSec, and routing (BGP, OSPF)",
+        "Built and operated replication lab environments to isolate OS-level defects, performed deep packet inspection using Wireshark, and delivered 1000+ enterprise security solutions across large datacenter environments",
+        "Designed and supported high-availability firewall and application load-balancing (LTM/HLB) architectures, automated workflows using Ansible and PowerShell, and mentored junior engineers"
+      ]
+    }
+  ],
+  "certifications": [
+    "Palo Alto Networks Certified Network Security Engineer (PCNSE) — 2024",
+    "RISE Award – Certificate of Excellence — Infosys & Mercedes-Benz, Q2 FY25",
+    "Best Productivity Award — iOPEX Technologies, Q4 FY24",
+    "Top Performer – TAT NGFW — iOPEX Technologies, Q4 FY23",
+    "Best Productivity Award — iOPEX Technologies, Q3 FY23"
+  ],
+  "education": [
+    {
+      "degree": "B.Tech in Electrical & Electronics Engineering",
+      "institution": "Guru Gobind Singh Indraprastha University, New Delhi, India",
+      "year": "2017-2021"
+    }
+  ]
+}
