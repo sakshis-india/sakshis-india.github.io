@@ -1,11 +1,12 @@
 // Typing animation for home page
 
 const quotes = [
-    "Building resilient systems in an insecure world.",
-    "Cybersecurity beyond compliance.",
-    "Designing trust in digital systems.",
+    "Making cloud security simple, yet robust.", 
+    "Engineering networks for reliability and trust.", 
+    "Working at the intersection of risk and resilience.",  
+    "Designing trust in modern infrastructure.",
     "Security as an enabler, not a blocker.",
-    "Working at the intersection of risk and resilience."
+    "Empowering innovation through secure systems.",
 ];
 
 let currentQuoteIndex = 0;
