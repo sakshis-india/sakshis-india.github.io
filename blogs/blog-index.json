@@ -1,5 +1,11 @@
 [
   {
+    "slug": "2026-02-07-threat-prevention-palo-alto",
+    "title": "Threat Prevention Made Practical: How Palo Alto Stops Attacks in Real Time",
+    "date": "2026-02-07",
+    "description": "A practical guide to understanding and deploying Threat Prevention profiles in Palo Alto Networks firewalls, covering IPS, anti-malware technologies, and real-world defense strategies."
+  },
+  {
     "slug": "2024-02-07-panos-commit-validation-error-http-filter",
     "title": "Fixing Commit Validation Error After PAN-OS Upgrade: Application-Filter 'http' Already in Use",
     "date": "2024-02-07",
