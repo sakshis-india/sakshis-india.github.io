@@ -1,5 +1,5 @@
 {
-  "summary": "Network and Security Engineer with 4+ years of hands-on experience in enterprise and hybrid cloud environments, specializing in designing, securing, and troubleshooting on-prem and cloud networks with a strong foundation in IP networking, routing, firewalls, and automation. Proven ability to take ownership of complex security issues end-to-end, collaborate with cross-functional teams, and support large-scale, SLA-driven production infrastructures aligned with Microsoft cloud and enterprise security standards.",
+  "summary": "Network & cloud security engineer with 4+ years securing enterprise and hybrid-cloud environments for global organizations including Daimler/Mercedes-Benz, now building cybersecurity products at Authenticone. PCNSE-certified expert in multi-vendor firewalls (Palo Alto NGFW, Panorama, FortiGate, Check Point, Cisco Firepower), VPN, NAT, high availability, and routing (BGP/OSPF) across Azure and AWS, with a proven record of owning high-severity incidents end-to-end under 24x7 SLAs. I pair deep operator experience with a builder's mindset to design secure, resilient systems and the tooling security teams actually need.",
   "skills": [
     "Palo Alto NGFW",
     "Panorama",
@@ -14,6 +14,7 @@
     "GlobalProtect VPN",
     "IPsec VPN",
     "SSL VPN",
+    "Zero Trust",
     "BGP",
     "OSPF",
     "EIGRP",
@@ -31,15 +32,28 @@
     "Packet Analysis",
     "Incident Response",
     "Root Cause Analysis",
+    "EDR",
+    "Threat Modeling",
+    "Secure SDLC",
     "ServiceNow",
     "JIRA",
     "ITIL"
   ],
   "experience": [
     {
-      "title": "Senior Associate – Cybersecurity Consultant",
+      "title": "Senior Cybersecurity Consultant",
+      "company": "Authenticone",
+      "period": "Apr 2026 - Present",
+      "highlights": [
+        "Build and enhance cybersecurity products end-to-end — including developing and extending an endpoint detection & response (EDR) tool — from threat model to shipped feature",
+        "Translate 4+ years of frontline firewall, VPN, and cloud-security experience into product features that solve real security-operator workflows",
+        "Apply threat modeling and secure-development practices across the SDLC"
+      ]
+    },
+    {
+      "title": "Cyber Security Consultant",
       "company": "Infosys Limited (Client: Mercedes-Benz)",
-      "period": "Jun 2025 - Present",
+      "period": "Jun 2025 - Feb 2026",
       "highlights": [
         "Delivered end-to-end cybersecurity consulting including problem analysis, effort estimation, firewall architecture design, and deployment across enterprise environments",
         "Provided L2/L3 support for multi-vendor firewalls (Palo Alto, FortiGate, Check Point, Cisco Firepower), managing security policies, NAT, VPNs, upgrades, and high-availability configurations",
@@ -47,11 +61,11 @@
       ]
     },
     {
-      "title": "Network Security Engineer – Escalation Engineer",
+      "title": "Senior System Engineer",
       "company": "iOPEX Technologies Pvt. Ltd.",
       "period": "Jan 2022 - Jun 2025",
       "highlights": [
-        "Served as L3 escalation engineer for enterprise-scale Palo Alto NGFW deployments, resolving high-severity network and security incidents within strict SLA targets",
+        "Served as L2/L3 escalation engineer for enterprise-scale Palo Alto NGFW deployments, resolving high-severity network and security incidents within strict SLA targets",
         "Designed, deployed, and supported secure hybrid cloud architectures across Azure, AWS, and VMware ESXi, including advanced troubleshooting of GlobalProtect, IPsec/SSL VPNs, GRE, MACSec, and routing (BGP, OSPF)",
         "Built and operated replication lab environments to isolate OS-level defects, performed deep packet inspection using Wireshark, and delivered 1000+ enterprise security solutions across large datacenter environments",
         "Designed and supported high-availability firewall and application load-balancing (LTM/HLB) architectures, automated workflows using Ansible and PowerShell, and mentored junior engineers"
@@ -60,7 +74,6 @@
   ],
   "certifications": [
     "Palo Alto Networks Certified Network Security Engineer (PCNSE) — 2024",
-    "RISE Award – Certificate of Excellence — Infosys & Mercedes-Benz, Q2 FY25",
     "Best Productivity Award — iOPEX Technologies, Q4 FY24",
     "Top Performer – TAT NGFW — iOPEX Technologies, Q4 FY23",
     "Best Productivity Award — iOPEX Technologies, Q3 FY23"
@@ -68,7 +81,7 @@
   "education": [
     {
       "degree": "B.Tech in Electrical & Electronics Engineering",
-      "institution": "Guru Gobind Singh Indraprastha University, New Delhi, India",
+      "institution": "Dr Akhilesh Das Gupta Institute of Technology & Management (GGSIPU), New Delhi, India",
       "year": "2017-2021"
     }
   ]
