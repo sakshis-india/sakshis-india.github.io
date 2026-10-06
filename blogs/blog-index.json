@@ -1,5 +1,11 @@
 [
   {
+    "slug": "2026-10-05-edr-agent-rollout-code-signing",
+    "title": "Shipping an EDR Agent: Code Signing, Signed Manifests, and Rollback That Actually Works",
+    "date": "2026-10-05",
+    "description": "What it takes to ship an endpoint agent to Windows, macOS, and Linux fleets — the signing chain, stable vs edge release channels, signed update manifests, and migrating off a legacy agent without stranding endpoints."
+  },
+  {
     "slug": "2026-02-07-threat-prevention-palo-alto",
     "title": "Threat Prevention Made Practical: How Palo Alto Stops Attacks in Real Time",
     "date": "2026-02-07",

@@ -1,5 +1,16 @@
 // Blog reader page logic
 
+// Parse a YYYY-MM-DD date as a LOCAL date.
+// `new Date('2026-10-05')` is parsed as UTC midnight, which renders as the
+// previous day for anyone west of UTC.
+function parseLocalDate(value) {
+    const parts = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(value || ''));
+    if (!parts) {
+        return new Date(value);
+    }
+    return new Date(Number(parts[1]), Number(parts[2]) - 1, Number(parts[3]));
+}
+
 function getSlugFromUrl() {
     const params = new URLSearchParams(window.location.search);
     return params.get('slug');
@@ -55,7 +66,7 @@ function renderBlogPost(slug) {
             // Format date
             let dateString = '';
             if (metadata.date) {
-                const date = new Date(metadata.date);
+                const date = parseLocalDate(metadata.date);
                 dateString = date.toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',

@@ -1,15 +1,17 @@
 {
-  "summary": "Network & cloud security engineer with 4+ years securing enterprise and hybrid-cloud environments for global organizations including Daimler/Mercedes-Benz, now building cybersecurity products at Authenticone. PCNSE-certified expert in multi-vendor firewalls (Palo Alto NGFW, Panorama, FortiGate, Check Point, Cisco Firepower), VPN, NAT, high availability, and routing (BGP/OSPF) across Azure and AWS, with a proven record of owning high-severity incidents end-to-end under 24x7 SLAs. I pair deep operator experience with a builder's mindset to design secure, resilient systems and the tooling security teams actually need.",
+  "summary": "Network & cloud security engineer with ~5 years securing enterprise and hybrid-cloud environments for global organizations including Daimler/Mercedes-Benz, now building cybersecurity products at AuthenticOne. Deep multi-vendor firewall expertise — Palo Alto NGFW, Panorama, FortiGate, Check Point, Cisco Secure Firewall (FTD/FMC) — across VPN, NAT, high availability, and routing (BGP/OSPF) on Azure and AWS, with a proven record of owning high-severity incidents end-to-end under 24x7 SLAs. I pair deep operator experience with a builder's mindset to design secure, resilient systems and the tooling security teams actually need.",
   "skills": [
     "Palo Alto NGFW",
     "Panorama",
-    "Cisco Firepower",
+    "Prisma Access",
+    "Cisco Firepower (FTD/FMC)",
     "FortiGate",
-    "Check Point",
+    "Check Point (SmartConsole)",
     "Prisma SD-WAN",
     "Microsoft Azure",
     "AWS",
-    "VMware ESXi",
+    "Google Cloud (VM-Series)",
+    "VMware vSphere / ESXi",
     "Hybrid Cloud Network Design",
     "GlobalProtect VPN",
     "IPsec VPN",
@@ -19,12 +21,12 @@
     "OSPF",
     "EIGRP",
     "MPLS",
+    "Terraform (panos provider)",
     "Ansible (YAML)",
     "PowerShell",
     "High Availability Architecture",
-    "Load Balancing (LTM/HLB)",
+    "Load Balancing (F5 LTM/GTM)",
     "Wireshark",
-    "Vulnerability Assessment",
     "Security Policy Management",
     "NAT Configuration",
     "SSL Decryption",
@@ -32,6 +34,7 @@
     "Packet Analysis",
     "Incident Response",
     "Root Cause Analysis",
+    "Cortex XDR / XSOAR",
     "EDR",
     "Threat Modeling",
     "Secure SDLC",
@@ -42,38 +45,41 @@
   "experience": [
     {
       "title": "Senior Cybersecurity Consultant",
-      "company": "Authenticone",
+      "company": "AuthenticOne Cybersecurity Pvt Ltd",
       "period": "Apr 2026 - Present",
       "highlights": [
         "Build and enhance cybersecurity products end-to-end — including developing and extending an endpoint detection & response (EDR) tool — from threat model to shipped feature",
-        "Translate 4+ years of frontline firewall, VPN, and cloud-security experience into product features that solve real security-operator workflows",
-        "Apply threat modeling and secure-development practices across the SDLC"
+        "Own EDR agent release and rollout automation: CI/CD pipelines, code-signing across Windows/macOS/Linux, signed manifests on stable and edge channels, and legacy-agent migration with rollback",
+        "Translate frontline firewall, VPN, and cloud-security experience into product features that solve real security-operator workflows",
+        "Apply threat modeling and secure-development practices across the SDLC, and support the SOC team with monitoring, triage, and hardening reviews"
       ]
     },
     {
-      "title": "Cyber Security Consultant",
+      "title": "Associate Consultant",
       "company": "Infosys Limited (Client: Mercedes-Benz)",
       "period": "Jun 2025 - Feb 2026",
       "highlights": [
-        "Delivered end-to-end cybersecurity consulting including problem analysis, effort estimation, firewall architecture design, and deployment across enterprise environments",
-        "Provided L2/L3 support for multi-vendor firewalls (Palo Alto, FortiGate, Check Point, Cisco Firepower), managing security policies, NAT, VPNs, upgrades, and high-availability configurations",
-        "Led POCs for firewall and cloud security solutions, conducted vulnerability assessments, and implemented security hardening for 24x7 SLA-driven production systems"
+        "Delivered end-to-end cybersecurity consulting including problem analysis, effort estimation, firewall architecture design, and deployment across 30+ enterprise sites",
+        "Provided L2/L3 support for multi-vendor firewalls (Palo Alto, FortiGate, Check Point, Cisco Firepower), managing security policies, NAT, VPNs, upgrades, and high-availability configurations at 1k–5k rule scale",
+        "Managed Check Point end to end via SmartConsole — migrations, version upgrades and hotfixes, rule-base cleanup, and HA clusters",
+        "Led POCs for firewall and cloud security solutions and implemented security hardening for 24x7 SLA-driven production systems"
       ]
     },
     {
-      "title": "Senior System Engineer",
-      "company": "iOPEX Technologies Pvt. Ltd.",
+      "title": "Network Security Engineer",
+      "company": "iOPEX Technologies Pvt Ltd",
       "period": "Jan 2022 - Jun 2025",
       "highlights": [
-        "Served as L2/L3 escalation engineer for enterprise-scale Palo Alto NGFW deployments, resolving high-severity network and security incidents within strict SLA targets",
-        "Designed, deployed, and supported secure hybrid cloud architectures across Azure, AWS, and VMware ESXi, including advanced troubleshooting of GlobalProtect, IPsec/SSL VPNs, GRE, MACSec, and routing (BGP, OSPF)",
+        "Owned escalated Palo Alto NGFW cases for Palo Alto Networks' Top 25 and Platinum enterprise customers — typically 10–15 active cases across estates of 200+ firewalls — resolving high-severity incidents within strict SLA targets",
+        "Designed, deployed, and supported secure hybrid cloud architectures across Azure, AWS, GCP, and VMware vSphere, including advanced troubleshooting of GlobalProtect, IPsec/SSL VPNs, GRE, MACSec, and routing (BGP, OSPF)",
         "Built and operated replication lab environments to isolate OS-level defects, performed deep packet inspection using Wireshark, and delivered 1000+ enterprise security solutions across large datacenter environments",
-        "Designed and supported high-availability firewall and application load-balancing (LTM/HLB) architectures, automated workflows using Ansible and PowerShell, and mentored junior engineers"
+        "Designed and supported high-availability firewall and F5 load-balancing (LTM/GTM) architectures, automated PAN-OS configuration with Terraform and Ansible, and mentored 30+ junior engineers while authoring SOPs and KB articles"
       ]
     }
   ],
   "certifications": [
-    "Palo Alto Networks Certified Network Security Engineer (PCNSE) — 2024",
+    "Palo Alto Networks Certified Network Security Engineer (PCNSE) — passed October 2022; Palo Alto Networks retired the PCNSE credential in July 2025",
+    "Cisco CCNA training",
     "Best Productivity Award — iOPEX Technologies, Q4 FY24",
     "Top Performer – TAT NGFW — iOPEX Technologies, Q4 FY23",
     "Best Productivity Award — iOPEX Technologies, Q3 FY23"

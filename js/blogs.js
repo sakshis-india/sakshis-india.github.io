@@ -1,10 +1,21 @@
 // Blog listing page logic
 
+// Parse a YYYY-MM-DD date as a LOCAL date.
+// `new Date('2026-10-05')` is parsed as UTC midnight, which renders as the
+// previous day for anyone west of UTC.
+function parseLocalDate(value) {
+    const parts = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(value || ''));
+    if (!parts) {
+        return new Date(value);
+    }
+    return new Date(Number(parts[1]), Number(parts[2]) - 1, Number(parts[3]));
+}
+
 function groupBlogsByYearAndMonth(blogs) {
     const grouped = {};
 
     blogs.forEach(blog => {
-        const date = new Date(blog.date);
+        const date = parseLocalDate(blog.date);
         const year = date.getFullYear();
         const month = date.toLocaleString('default', { month: 'long' });
 
@@ -30,7 +41,7 @@ function renderBlogs(blogs) {
     }
 
     // Sort blogs by date (newest first)
-    blogs.sort((a, b) => new Date(b.date) - new Date(a.date));
+    blogs.sort((a, b) => parseLocalDate(b.date) - parseLocalDate(a.date));
 
     // Group by year and month
     const grouped = groupBlogsByYearAndMonth(blogs);
@@ -61,21 +72,21 @@ function renderBlogs(blogs) {
             html += `<h3>${month}</h3>`;
 
             // Sort blogs within month by date (newest first)
-            months[month].sort((a, b) => new Date(b.date) - new Date(a.date));
+            months[month].sort((a, b) => parseLocalDate(b.date) - parseLocalDate(a.date));
 
             months[month].forEach(blog => {
-                const formattedDate = new Date(blog.date).toLocaleDateString('en-US', {
+                const formattedDate = parseLocalDate(blog.date).toLocaleDateString('en-US', {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric'
                 });
 
                 html += `
-                    <div class="blog-item" onclick="window.location.href='blog.html?slug=${blog.slug}'">
+                    <a class="blog-item" href="blog.html?slug=${encodeURIComponent(blog.slug)}">
                         <h4>${blog.title}</h4>
                         <p class="blog-date">${formattedDate}</p>
                         <p class="blog-description">${blog.description}</p>
-                    </div>
+                    </a>
                 `;
             });
 
